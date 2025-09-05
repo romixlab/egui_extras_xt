@@ -328,6 +328,7 @@ pub(crate) fn normalized_angle_unsigned_excl(angle: f32) -> f32 {
 }
 
 /// Wrap angle to `(0..=TAU)` range.
+#[allow(dead_code)]
 pub(crate) fn normalized_angle_unsigned_incl(angle: f32) -> f32 {
     if angle < 0.0 {
         ((angle % TAU) + TAU) % TAU
@@ -340,6 +341,7 @@ pub(crate) fn normalized_angle_unsigned_incl(angle: f32) -> f32 {
 
 // ----------------------------------------------------------------------------
 
+#[allow(dead_code)]
 pub(crate) trait SymLog {
     fn symlog(&self, base: Self) -> Self;
 }
@@ -357,6 +359,7 @@ impl SymLog for f32 {
 // ----------------------------------------------------------------------------
 // TODO: Remove this trait when egui exposes text rotation with a sane API.
 
+#[allow(dead_code)]
 pub(crate) trait RotatedText {
     fn rotated_text(
         &self,

@@ -1,4 +1,4 @@
-mod hash;
+// mod hash;
 
 pub mod common;
 
